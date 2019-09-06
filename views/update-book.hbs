@@ -1,0 +1,21 @@
+<div class="container">
+  <form action="/edit-book?bookid={{_id}}" method="post">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input value="{{title}}" class="form-control" type="text" name="title" id="title">
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input value="{{description}}" class="form-control" type="text" name="description" id="description">
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input value="{{author}}" class="form-control" type="text" name="author" id="author">
+    </div>
+    <div class="form-group">
+      <label for="rating">Rating</label>
+      <input value="{{rating}}" class="form-control" type="number" max="5" min="1" name="rating" id="rating">
+    </div>
+    <input type="submit" value="Update" class="btn btn-primary">
+  </form>
+</div>

@@ -1,0 +1,18 @@
+<div class="container">
+  <br>
+  <br>
+  <h2>Books</h2>
+  <br>
+  <div class="row">
+    {{#each books}}
+    <div class="col-4">
+      <h3>{{this.title}} - {{this.author}}</h3>
+      <p>{{this.description}}</p>
+      <small>Rating: {{this.rating}}</small>
+      <a href="/edit-book?bookid={{this._id}}">
+        <button class="btn btn-warning">Edit</button>
+      </a>
+    </div>
+    {{/each}}
+  </div>
+</div>
